@@ -15,7 +15,7 @@ def solutionOne(input):
   return max(input)
 
 def solutionTwo(input):
-  return sum(list(sorted(input, reverse=True))[0:3])
+  return sum(sorted(input, reverse=True)[0:3])
 
 def main():
   input = list(map(getSubArraySum, parse_input()))
