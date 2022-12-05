@@ -1,7 +1,7 @@
 from functools import reduce
 
 def parse_input():
-  with open('full_input.txt') as f:
+  with open('one/full_input.txt') as f:
     lines = f.read().split('\n\n')
     for i, line in enumerate(lines):
       lines[i] = line.split()
@@ -17,10 +17,7 @@ def solutionOne(input):
 def solutionTwo(input):
   return sum(sorted(input, reverse=True)[0:3])
 
-def main():
+def printAll():
   input = list(map(getSubArraySum, parse_input()))
   print("1:", solutionOne(input))
   print("2:", solutionTwo(input))
-
-if __name__ == "__main__":
-    main()
