@@ -1,7 +1,7 @@
 from functools import reduce
 
 def parse_input():
-  with open('one/full_input.txt') as f:
+  with open('solutions/one_input.txt') as f:
     lines = f.read().split('\n\n')
     for i, line in enumerate(lines):
       lines[i] = line.split()
@@ -9,7 +9,8 @@ def parse_input():
     return lines
 
 def getSubArraySum(array):
-  return reduce(lambda sum, item: sum + int(item), array, 0)
+  return reduce(lambda sum, item: sum + int(item), \
+    array, 0)
 
 def solutionOne(input):
   return max(input)

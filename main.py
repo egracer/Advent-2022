@@ -1,7 +1,7 @@
-from one import solution_one
+from solutions import two
 
 def main():
-  solution_one.printAll()
+  two.main()
   
 if __name__ == "__main__":
     main()
